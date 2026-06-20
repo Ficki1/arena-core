@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "type": "module",
-"packageManager": "pnpm@9.0.0",
+
+  "packageManager": "pnpm@9.0.0",
+
   "engines": {
     "node": "20.x"
   },
@@ -13,14 +15,14 @@
     "start": "tsx src/index.ts",
     "deploy": "tsx src/deploy-commands.ts",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "postinstall": "pnpm rebuild better-sqlite3"
+    "postinstall": "pnpm rebuild better-sqlite3 || npm rebuild better-sqlite3"
   },
 
   "dependencies": {
     "@discordjs/rest": "^2.4.0",
     "discord-api-types": "^0.37.115",
     "discord.js": "^14.16.3",
-    "better-sqlite3": "^12.10.0"
+    "better-sqlite3": "^12.11.1"
   },
 
   "devDependencies": {
@@ -28,7 +30,5 @@
     "@types/node": "^20.0.0",
     "tsx": "^4.19.2",
     "typescript": "^5.0.0"
-  },
-
-  "packageManager": "pnpm@9"
+  }
 }
