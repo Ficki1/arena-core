@@ -3,21 +3,28 @@
   "version": "0.0.1",
   "private": true,
   "type": "module",
+
+  "engines": {
+    "node": "22.x"
+  },
+
   "scripts": {
     "dev": "tsx src/index.ts",
     "start": "tsx src/index.ts",
     "deploy": "tsx src/deploy-commands.ts",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
+
   "dependencies": {
     "@discordjs/rest": "^2.4.0",
     "better-sqlite3": "^12.10.0",
     "discord-api-types": "^0.37.115",
     "discord.js": "^14.16.3"
   },
+
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.13",
     "@types/node": "^22.0.0",
     "tsx": "^4.19.2"
   }
-  }
+}
