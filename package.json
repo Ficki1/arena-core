@@ -8,11 +8,12 @@
     "node": "22.x"
   },
 
-  "scripts": {
-    "dev": "tsx src/index.ts",
-    "start": "tsx src/index.ts",
-    "deploy": "tsx src/deploy-commands.ts",
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+"scripts": {
+  "dev": "tsx src/index.ts",
+  "start": "tsx src/index.ts",
+  "deploy": "tsx src/deploy-commands.ts",
+  "typecheck": "tsc -p tsconfig.json --noEmit",
+  "postinstall": "pnpm rebuild better-sqlite3"
   },
 
   "dependencies": {
