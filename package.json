@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx src/index.ts",
+    "start": "tsx src/index.ts",
     "deploy": "tsx src/deploy-commands.ts",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
@@ -19,5 +20,4 @@
     "@types/node": "^22.0.0",
     "tsx": "^4.19.2"
   }
-}
-
+  }
